@@ -3,6 +3,7 @@
 প্রতিদিন **3-4টা** প্রবলেম সলভ করবে। Easy থেকে শুরু করে ধীরে ধীরে Medium-এ যাবে।
 
 ---
+https://shahriar76.medium.com/important-topics-and-questions-for-bd-software-engineering-job-interviews-46e9338b21a
 
 ## **Day 1 — Arrays Basics (4 problems)**
 
