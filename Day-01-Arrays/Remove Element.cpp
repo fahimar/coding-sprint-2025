@@ -15,7 +15,7 @@ public:
         return index;
     }
 
-}
+};
 
 
 int main() {
