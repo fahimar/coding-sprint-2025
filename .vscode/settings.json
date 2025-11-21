@@ -1,5 +1,7 @@
 {
-    "files.associations": {
-        "vector": "cpp"
-    }
+  "files.associations": {
+    "*.js": "javascript",
+    "vector": "cpp",
+    "string": "cpp"
+  }
 }
