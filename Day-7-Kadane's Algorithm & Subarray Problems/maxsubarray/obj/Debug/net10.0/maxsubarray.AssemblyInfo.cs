@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("maxsubarray")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bd650356b92aef8bc5a1c00418bf2fc948d7ea2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c72d1198060c24c8fbaea511e155d9ce882f6dba")]
 [assembly: System.Reflection.AssemblyProductAttribute("maxsubarray")]
 [assembly: System.Reflection.AssemblyTitleAttribute("maxsubarray")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

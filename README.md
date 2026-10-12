@@ -174,3 +174,64 @@ https://shahriar76.medium.com/important-topics-and-questions-for-bd-software-eng
 4. **Mock test সিরিয়াসলি দিবে** — timer set করে
 
 তুমি কোন language-এ code করবে? সেটা বললে language-specific tips দিব! 🚀
+
+## **🧪 ZCOINOI Practice: Run / Build / Testcase Guideline**
+
+> Folder: `Warm-up CodeChef ZCOINOI practice/` — এখানকার যেকোনো `.cpp` / `.py` file VS Code বা Sublime Text থেকে এক key-তে run করা যাবে।
+
+### **📁 Testcase convention**
+
+Source file এর নামেই `.in` আর `.out` file বানাও (same folder এ):
+
+```
+Smart Phone.cpp
+Smart Phone.in     ← input (stdin হিসেবে যাবে)
+Smart Phone.out    ← expected output (থাকলে auto compare হবে)
+```
+
+- `.in` না থাকলে → terminal এ নিজে input type করো (শেষে `Ctrl-D`)
+- `.out` থাকলে → `✔ PASSED` অথবা `✖ WRONG ANSWER` + diff দেখাবে
+
+### **▶️ VS Code**
+
+1. Run করতে চাওয়া `.cpp` / `.py` file টা open করো
+2. **`Cmd + Shift + B`** চাপো (Run Build Task → "Run current file (with testcase)")
+3. Output integrated terminal এ আসবে
+
+Config: `.vscode/tasks.json` (repo root এ আগে থেকেই আছে)
+
+### **▶️ Sublime Text**
+
+1. `ZCOINOI.sublime-build` file টা copy করো:
+   ```bash
+   cp "Warm-up CodeChef ZCOINOI practice/ZCOINOI.sublime-build" \
+      ~/Library/Application\ Support/Sublime\ Text/Packages/User/
+   ```
+2. `Tools → Build System → ZCOINOI` select করো
+3. **`Cmd + B`** চাপলেই run হবে
+
+### **💻 Terminal থেকে (editor ছাড়া)**
+
+```bash
+cd "Warm-up CodeChef ZCOINOI practice"
+./run.sh "Smart Phone.cpp"
+./run.sh SmartPhone.py
+```
+
+### **⚙️ Behind the scenes**
+
+| Language | কী হয় |
+|----------|--------|
+| C++ | `g++ -std=c++17 -O2 -Wall` দিয়ে `build/` folder এ compile → run |
+| Python | `python3 file.py` |
+
+### **✅ নতুন problem solve করার workflow**
+
+1. `ProblemName.cpp` (বা `.py`) বানাও
+2. Problem statement এর sample input → `ProblemName.in`, sample output → `ProblemName.out`
+3. `Cmd + Shift + B` / `Cmd + B` → PASSED দেখলে submit করো
+4. Edge case (n = 1, সব same, বড় n) এর জন্য `.in` বদলে আবার চালাও
+
+## **✅ Daily log template ** 
+
+https://docs.google.com/spreadsheets/d/1Kp-DBPeDrx0tBZUbXBNLDkvbz9kbxDfIqCSMSGwlBGM/edit?usp=sharing
